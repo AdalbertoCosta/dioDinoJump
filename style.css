@@ -1,0 +1,52 @@
+body{
+
+    background-color:#709fbc;
+}
+
+.dino {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+    background-image: url(img/dino/Idle1.png);
+    background-size: 95px;
+      
+}
+
+.cactus{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0px;
+    background-image: url(img/cactus.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+.background {
+    position: absolute;
+    background-image: url('img/deserto-removebg-preview.png');
+    background-repeat: repeat-x;
+    animation: slideright 500s infinite linear;
+    -webkit-animation: slideright 3000s infinite linear;
+    width: 100%;
+    height: 200px;
+    bottom: 1px;
+  }
+
+.game-over {
+    text-align: center;
+    color: #221e1e;
+    margin: 50px 0;
+    font-family: arial;
+}
