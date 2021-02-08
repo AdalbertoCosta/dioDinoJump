@@ -4,6 +4,8 @@ body{
 }
 
 .dino {
+    animation-duration: 2s;
+    animation: run 0.4s infinite linear;
     width: 60px;
     height: 60px;
     position: absolute;
@@ -12,6 +14,32 @@ body{
     background-image: url(img/dino/Idle1.png);
     background-size: 95px;
       
+}
+.subir{
+    animation-duration: 2s;
+    animation: puloSubir 0.4s  linear;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+    background-image: url(img/dino/Idle1.png);
+    background-size: 95px;
+}
+.dead{
+    animation-duration: 2s;
+    animation: dead 0.4s  linear;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    left: 100px;
+    background-image: url(img/dino/Idle1.png);
+    background-size: 95px;
+}
+.h1-gameover{
+    text-align: center;
+    color: red;
 }
 
 .cactus{
@@ -47,6 +75,59 @@ body{
 .game-over {
     text-align: center;
     color: #221e1e;
-    margin: 50px 0;
-    font-family: arial;
+    height: 500px;
+    background-image: url('img/game_over.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@keyframes run {
+    0% {
+      background-image: url(img/dino/Run1.png);
+    }
+    12.5% {
+      background-image: url(img/dino/Run2.png);
+    }
+    25% {
+      background-image: url(img/dino/Run3.png);
+    }
+    37.5% {
+      background-image: url(img/dino/Run4.png);
+    }
+    50% {
+      background-image: url(img/dino/Run5.png);
+    }
+    62.5% {
+      background-image: url(img/dino/Run6.png);
+    }
+    75% {
+        background-image: url(img/dino/Run7.png);
+    }
+    87.5%{
+        background-image: url(img/dino/Run8.png);
+    }
+    100%{
+
+    }
+}
+
+@keyframes puloSubir{
+    0% {
+      background-image: url(img/dino/Jump1.png);
+    }
+    20% {
+      background-image: url(img/dino/Jump2.png);
+    }
+    40% {
+      background-image: url(img/dino/Jump3.png);
+    }
+    60% {
+      background-image: url(img/dino/Jump4.png);
+    }
+    80% {
+      background-image: url(img/dino/Jump5.png);
+    }
+    100% {
+      background-image: url(img/dino/Jump6.png);
+    }
 }
