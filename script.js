@@ -6,7 +6,7 @@ let isJumping = false;
 let isGameOver = false;
 
 document.addEventListener('keyup', (event) =>{
-    if(event.keyCode === 32 || event.keyCode === 38){
+    if(event.keyCode === 32 || event.keyCode === 38 || event.ontouchstart()){
         console.log("apertou pular");
         if(!isJumping) {
             jump();
